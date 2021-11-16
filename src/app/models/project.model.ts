@@ -5,7 +5,7 @@ export class Project{
         public id?:number,
         public name?:string,
         public description?:string,
-        public tasks?: Task,
+        public tasks?: Task[],
         public categoryId?:number
     ){}
 }

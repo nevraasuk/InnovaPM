@@ -14,4 +14,8 @@ export class ProjectComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getIncompletedTaskCount(){
+    return this.project.tasks?.filter(t=>!t.isDone).length;
+  }
+
 }

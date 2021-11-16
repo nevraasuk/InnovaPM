@@ -9,7 +9,8 @@ import { Project } from '../models/project.model';
 })
 export class ProjectListComponent implements OnInit {
 
-  projects : Project[] = projects;
+  projects : Project[]=projects;
+  searchText:string;
   constructor() { }
 
   ngOnInit(): void {

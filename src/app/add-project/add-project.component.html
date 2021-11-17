@@ -1,0 +1,20 @@
+<form #addNewProject="ngForm" (ngSubmit)="addProject()" >
+    <div class="m-2">
+        <label for="projectName" class="form-label">Proje Adı</label>
+        <input type="text" name="projectName" id="projectName" required [(ngModel)]="project.name" class="form-control">
+        <span>Burada validasyon olacak</span>
+    </div>
+    <div class="m-2">
+        <label for="description" class="form-label">Proje Açıklaması</label>
+        <input type="text" name="description" id="description" required [(ngModel)]="project.description"
+            class="form-control">
+        <span>Burada validasyon olacak</span>
+    </div>
+    <div class="m-2">
+        <label for="categoryId" class="form-label">Proje Kategorisi</label>
+        <select class="form-control" id="categoryId" name="categoryId" [(ngModel)]="project.categoryId"
+            required></select>
+        <span>Burada validasyon olacak</span>
+    </div>
+   <button type="submit" class="btn btn-danger">Proje Ekle</button>
+</form>
